@@ -1,13 +1,14 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import App from './App';
+import Booking from './component/Booking';
+import ContactUs from './component/ContactUs';
 import ErrorPage from './component/ErrorPage';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import NavbarHeader from './component/Navbar';
-import { About } from './component/About';
+import './index.css';
+import reportWebVitals from './reportWebVitals';
 
 const router = createBrowserRouter([
   {
@@ -16,8 +17,17 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
   },
   {
-    path: "/sss",
-    element: <About />,
+    path: "/home",
+    element: <App />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/booking",
+    element: <Booking />,
+  },
+  {
+    path: "/contact",
+    element: <ContactUs />,
   },
 ]);
 

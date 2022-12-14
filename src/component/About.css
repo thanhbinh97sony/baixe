@@ -1,9 +1,12 @@
 .pictureHD {
-  height: 100vh;
-  width: 100vw;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
 }
 
-.pictureHD img {
-  height: 100%;
-  width: 100%;
+.inputCar {
+  border: 1px solid black;
+  padding: 10px;
+  font-weight: bolder;
 }
